@@ -11,7 +11,9 @@ This is an ongoing project to generate a snakemake workflow to anlaysis 16S rRNA
 ## Demo Sample for the 16S rRNA: 
 ## The Single-End Example
 ERR1293056 is from one of the sample from PRJEB12449 with the following name:
-ERR1293056.fastq.gz: 63.565 KB
++ ERR1293056.fastq.gz: 63.565 KB
++ ERR1293057.fastq.gz: 58,538 KB
++ ERR1293058.fastq.gz: 58,308 KB
 
 ## The Paired-End Example
 ERR475467 is a sample from PRJEB6070 with the following File names

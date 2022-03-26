@@ -1,2 +1,4 @@
 sample-id,absolute-filepath,direction
 ERR1293056,/home1/ksong4/WZ/longMicrobiome/Scripts/snakemake/SingleEnd16STest/ERR1293056.fastq.gz,forward
+ERR1293057,/home1/ksong4/WZ/longMicrobiome/Scripts/snakemake/SingleEnd16STest/ERR1293057.fastq.gz,forward
+ERR1293058,/home1/ksong4/WZ/longMicrobiome/Scripts/snakemake/SingleEnd16STest/ERR1293058.fastq.gz,forward
