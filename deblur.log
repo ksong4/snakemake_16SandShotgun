@@ -1,0 +1,156 @@
+INFO(140357384791872)2022-03-26 01:08:54,027:*************************
+INFO(140357384791872)2022-03-26 01:08:54,027:deblurring started
+WARNING(140357384791872)2022-03-26 01:08:54,028:deblur version 1.1.0 workflow started on /tmp/qiime2-archive-n47_ikyw/db3a7e23-3f79-4f9d-99f2-b64f607603ec/data
+WARNING(140357384791872)2022-03-26 01:08:54,028:parameters: {'seqs_fp': '/tmp/qiime2-archive-n47_ikyw/db3a7e23-3f79-4f9d-99f2-b64f607603ec/data', 'output_dir': '/tmp/tmpzy8szirv', 'pos_ref_fp': (), 'pos_ref_db_fp': (), 'neg_ref_fp': (), 'neg_ref_db_fp': (), 'overwrite': True, 'mean_error': 0.005, 'error_dist': [1, 0.06, 0.02, 0.02, 0.01, 0.005, 0.005, 0.005, 0.001, 0.001, 0.001, 0.0005], 'indel_prob': 0.01, 'indel_max': 3, 'trim_length': 0, 'left_trim_length': 0, 'min_reads': 10, 'min_size': 2, 'threads_per_sample': 1, 'keep_tmp_files': True, 'log_level': 2, 'log_file': '/home1/ksong4/WZ/longMicrobiome/Scripts/snakemake/deblur.log', 'jobs_to_start': 1, 'is_worker_thread': False, 'logger': <Logger __main__ (INFO)>}
+INFO(140357384791872)2022-03-26 01:08:54,028:error_dist is : [1, 0.06, 0.02, 0.02, 0.01, 0.005, 0.005, 0.005, 0.001, 0.001, 0.001, 0.0005]
+INFO(140357384791872)2022-03-26 01:08:54,028:deblur main program started
+INFO(140357384791872)2022-03-26 01:08:54,028:processing directory /tmp/qiime2-archive-n47_ikyw/db3a7e23-3f79-4f9d-99f2-b64f607603ec/data
+INFO(140357384791872)2022-03-26 01:08:54,030:building negative db sortmerna index files
+INFO(140357384791872)2022-03-26 01:08:54,030:build_index_sortmerna files ['/home/ksong4/miniconda3/envs/qiime2-2022.2/lib/python3.8/site-packages/deblur/support_files/artifacts.fa'] to dir /tmp/tmpzy8szirv/deblur_working_dir
+INFO(140357384791872)2022-03-26 01:08:54,221:building positive db sortmerna index files
+INFO(140357384791872)2022-03-26 01:08:54,221:build_index_sortmerna files ['/home/ksong4/miniconda3/envs/qiime2-2022.2/lib/python3.8/site-packages/deblur/support_files/88_otus.fasta'] to dir /tmp/tmpzy8szirv/deblur_working_dir
+INFO(140357384791872)2022-03-26 01:09:40,116:processing per sample fasta files
+INFO(140357384791872)2022-03-26 01:09:40,117:--------------------------------------------------------
+INFO(140357384791872)2022-03-26 01:09:40,117:launch_workflow for file /tmp/qiime2-archive-n47_ikyw/db3a7e23-3f79-4f9d-99f2-b64f607603ec/data/ERR1293056_0_L001_R1_001.fastq.gz
+INFO(140357384791872)2022-03-26 01:15:59,807:dereplicate seqs file /tmp/tmpzy8szirv/deblur_working_dir/ERR1293056_0_L001_R1_001.fastq.gz.trim
+INFO(140357384791872)2022-03-26 01:15:59,895:remove_artifacts_seqs file /tmp/tmpzy8szirv/deblur_working_dir/ERR1293056_0_L001_R1_001.fastq.gz.trim.derep
+WARNING(140357384791872)2022-03-26 01:15:59,895:file /tmp/tmpzy8szirv/deblur_working_dir/ERR1293056_0_L001_R1_001.fastq.gz.trim.derep has size 0, continuing
+WARNING(140357384791872)2022-03-26 01:15:59,916:remove artifacts failed, aborting
+WARNING(140357384791872)2022-03-26 01:15:59,917:deblurring failed for file /tmp/qiime2-archive-n47_ikyw/db3a7e23-3f79-4f9d-99f2-b64f607603ec/data/ERR1293056_0_L001_R1_001.fastq.gz
+INFO(140357384791872)2022-03-26 01:15:59,917:finished processing per sample fasta files
+INFO(140357384791872)2022-03-26 01:15:59,918:create_otu_table for 0 samples, into output table /tmp/tmpzy8szirv/all.biom
+INFO(140357384791872)2022-03-26 01:15:59,918:for output biom table loaded 0 samples, 0 unique sequences
+INFO(140357384791872)2022-03-26 01:15:59,919:keeping 0 (out of 0 sequences) with >=10 reads
+INFO(140357384791872)2022-03-26 01:15:59,935:saved to biom file /tmp/tmpzy8szirv/all.biom
+INFO(140357384791872)2022-03-26 01:15:59,935:saved sequence fasta file to /tmp/tmpzy8szirv/all.seqs.fa
+INFO(140357384791872)2022-03-26 01:15:59,935:getting 16s sequences from the biom table
+INFO(140357384791872)2022-03-26 01:15:59,935:remove_artifacts_seqs file /tmp/tmpzy8szirv/all.seqs.fa
+WARNING(140357384791872)2022-03-26 01:15:59,935:file /tmp/tmpzy8szirv/all.seqs.fa has size 0, continuing
+WARNING(140357384791872)2022-03-26 01:15:59,935:No clean sequences in /tmp/tmpzy8szirv/all.seqs.fa
+INFO(140357384791872)2022-03-26 01:15:59,935:Keeping temp files
+INFO(140357384791872)2022-03-26 01:15:59,936:deblur workflow finished
+INFO(140357384791872)2022-03-26 01:15:59,936:output saved to /tmp/tmpzy8szirv/all.biom
+INFO(140357384791872)2022-03-26 01:15:59,936:------------------
+INFO(140370544228160)2022-03-26 01:30:11,297:*************************
+INFO(140370544228160)2022-03-26 01:30:11,297:deblurring started
+WARNING(140370544228160)2022-03-26 01:30:11,297:deblur version 1.1.0 workflow started on /tmp/qiime2-archive-ttq6yf43/db3a7e23-3f79-4f9d-99f2-b64f607603ec/data
+WARNING(140370544228160)2022-03-26 01:30:11,297:parameters: {'seqs_fp': '/tmp/qiime2-archive-ttq6yf43/db3a7e23-3f79-4f9d-99f2-b64f607603ec/data', 'output_dir': '/tmp/tmpow3iuwis', 'pos_ref_fp': (), 'pos_ref_db_fp': (), 'neg_ref_fp': (), 'neg_ref_db_fp': (), 'overwrite': True, 'mean_error': 0.005, 'error_dist': [1, 0.06, 0.02, 0.02, 0.01, 0.005, 0.005, 0.005, 0.001, 0.001, 0.001, 0.0005], 'indel_prob': 0.01, 'indel_max': 3, 'trim_length': -1, 'left_trim_length': 0, 'min_reads': 10, 'min_size': 2, 'threads_per_sample': 1, 'keep_tmp_files': True, 'log_level': 2, 'log_file': '/home1/ksong4/WZ/longMicrobiome/Scripts/snakemake/deblur.log', 'jobs_to_start': 1, 'is_worker_thread': False, 'logger': <Logger __main__ (INFO)>}
+INFO(140370544228160)2022-03-26 01:30:11,298:error_dist is : [1, 0.06, 0.02, 0.02, 0.01, 0.005, 0.005, 0.005, 0.001, 0.001, 0.001, 0.0005]
+INFO(140370544228160)2022-03-26 01:30:11,298:deblur main program started
+INFO(140370544228160)2022-03-26 01:30:11,298:processing directory /tmp/qiime2-archive-ttq6yf43/db3a7e23-3f79-4f9d-99f2-b64f607603ec/data
+INFO(140370544228160)2022-03-26 01:30:11,299:building negative db sortmerna index files
+INFO(140370544228160)2022-03-26 01:30:11,299:build_index_sortmerna files ['/home/ksong4/miniconda3/envs/qiime2-2022.2/lib/python3.8/site-packages/deblur/support_files/artifacts.fa'] to dir /tmp/tmpow3iuwis/deblur_working_dir
+INFO(140370544228160)2022-03-26 01:30:11,382:building positive db sortmerna index files
+INFO(140370544228160)2022-03-26 01:30:11,383:build_index_sortmerna files ['/home/ksong4/miniconda3/envs/qiime2-2022.2/lib/python3.8/site-packages/deblur/support_files/88_otus.fasta'] to dir /tmp/tmpow3iuwis/deblur_working_dir
+INFO(140370544228160)2022-03-26 01:30:56,176:processing per sample fasta files
+INFO(140370544228160)2022-03-26 01:30:56,177:--------------------------------------------------------
+INFO(140370544228160)2022-03-26 01:30:56,177:launch_workflow for file /tmp/qiime2-archive-ttq6yf43/db3a7e23-3f79-4f9d-99f2-b64f607603ec/data/ERR1293056_0_L001_R1_001.fastq.gz
+INFO(140370544228160)2022-03-26 01:37:13,520:dereplicate seqs file /tmp/tmpow3iuwis/deblur_working_dir/ERR1293056_0_L001_R1_001.fastq.gz.trim
+INFO(140370544228160)2022-03-26 01:37:15,312:remove_artifacts_seqs file /tmp/tmpow3iuwis/deblur_working_dir/ERR1293056_0_L001_R1_001.fastq.gz.trim.derep
+INFO(140370544228160)2022-03-26 01:37:16,091:total sequences 3434, passing sequences 3434, failing sequences 0
+INFO(140370544228160)2022-03-26 01:37:16,091:multiple_sequence_alignment seqs file /tmp/tmpow3iuwis/deblur_working_dir/ERR1293056_0_L001_R1_001.fastq.gz.trim.derep.no_artifacts
+INFO(140703110846272)2022-03-26 01:39:20,802:*************************
+INFO(140703110846272)2022-03-26 01:39:20,802:deblurring started
+WARNING(140703110846272)2022-03-26 01:39:20,802:deblur version 1.1.0 workflow started on /tmp/qiime2-archive-3aw6twiq/db3a7e23-3f79-4f9d-99f2-b64f607603ec/data
+WARNING(140703110846272)2022-03-26 01:39:20,802:parameters: {'seqs_fp': '/tmp/qiime2-archive-3aw6twiq/db3a7e23-3f79-4f9d-99f2-b64f607603ec/data', 'output_dir': '/tmp/tmpz0oc_406', 'pos_ref_fp': (), 'pos_ref_db_fp': (), 'neg_ref_fp': (), 'neg_ref_db_fp': (), 'overwrite': True, 'mean_error': 0.005, 'error_dist': [1, 0.06, 0.02, 0.02, 0.01, 0.005, 0.005, 0.005, 0.001, 0.001, 0.001, 0.0005], 'indel_prob': 0.01, 'indel_max': 3, 'trim_length': -1, 'left_trim_length': 0, 'min_reads': 10, 'min_size': 2, 'threads_per_sample': 1, 'keep_tmp_files': True, 'log_level': 2, 'log_file': '/home1/ksong4/WZ/longMicrobiome/Scripts/snakemake/deblur.log', 'jobs_to_start': 1, 'is_worker_thread': False, 'logger': <Logger __main__ (INFO)>}
+INFO(140703110846272)2022-03-26 01:39:20,802:error_dist is : [1, 0.06, 0.02, 0.02, 0.01, 0.005, 0.005, 0.005, 0.001, 0.001, 0.001, 0.0005]
+INFO(140703110846272)2022-03-26 01:39:20,802:deblur main program started
+INFO(140703110846272)2022-03-26 01:39:20,803:processing directory /tmp/qiime2-archive-3aw6twiq/db3a7e23-3f79-4f9d-99f2-b64f607603ec/data
+INFO(140703110846272)2022-03-26 01:39:20,804:building negative db sortmerna index files
+INFO(140703110846272)2022-03-26 01:39:20,804:build_index_sortmerna files ['/home/ksong4/miniconda3/envs/qiime2-2022.2/lib/python3.8/site-packages/deblur/support_files/artifacts.fa'] to dir /tmp/tmpz0oc_406/deblur_working_dir
+INFO(140703110846272)2022-03-26 01:39:20,888:building positive db sortmerna index files
+INFO(140703110846272)2022-03-26 01:39:20,888:build_index_sortmerna files ['/home/ksong4/miniconda3/envs/qiime2-2022.2/lib/python3.8/site-packages/deblur/support_files/88_otus.fasta'] to dir /tmp/tmpz0oc_406/deblur_working_dir
+INFO(140703110846272)2022-03-26 01:40:06,519:processing per sample fasta files
+INFO(140703110846272)2022-03-26 01:40:06,520:--------------------------------------------------------
+INFO(140703110846272)2022-03-26 01:40:06,520:launch_workflow for file /tmp/qiime2-archive-3aw6twiq/db3a7e23-3f79-4f9d-99f2-b64f607603ec/data/ERR1293056_0_L001_R1_001.fastq.gz
+INFO(140703110846272)2022-03-26 01:46:17,608:dereplicate seqs file /tmp/tmpz0oc_406/deblur_working_dir/ERR1293056_0_L001_R1_001.fastq.gz.trim
+INFO(140703110846272)2022-03-26 01:46:19,373:remove_artifacts_seqs file /tmp/tmpz0oc_406/deblur_working_dir/ERR1293056_0_L001_R1_001.fastq.gz.trim.derep
+INFO(140703110846272)2022-03-26 01:46:20,048:total sequences 3434, passing sequences 3434, failing sequences 0
+INFO(140703110846272)2022-03-26 01:46:20,048:multiple_sequence_alignment seqs file /tmp/tmpz0oc_406/deblur_working_dir/ERR1293056_0_L001_R1_001.fastq.gz.trim.derep.no_artifacts
+INFO(139681346697024)2022-03-26 01:54:09,606:*************************
+INFO(139681346697024)2022-03-26 01:54:09,606:deblurring started
+WARNING(139681346697024)2022-03-26 01:54:09,607:deblur version 1.1.0 workflow started on /tmp/qiime2-archive-240k1wr6/db3a7e23-3f79-4f9d-99f2-b64f607603ec/data
+WARNING(139681346697024)2022-03-26 01:54:09,607:parameters: {'seqs_fp': '/tmp/qiime2-archive-240k1wr6/db3a7e23-3f79-4f9d-99f2-b64f607603ec/data', 'output_dir': '/tmp/tmp_arswnuj', 'pos_ref_fp': (), 'pos_ref_db_fp': (), 'neg_ref_fp': (), 'neg_ref_db_fp': (), 'overwrite': True, 'mean_error': 0.005, 'error_dist': [1, 0.06, 0.02, 0.02, 0.01, 0.005, 0.005, 0.005, 0.001, 0.001, 0.001, 0.0005], 'indel_prob': 0.01, 'indel_max': 3, 'trim_length': -1, 'left_trim_length': 0, 'min_reads': 10, 'min_size': 2, 'threads_per_sample': 1, 'keep_tmp_files': True, 'log_level': 2, 'log_file': '/home1/ksong4/WZ/longMicrobiome/Scripts/snakemake/deblur.log', 'jobs_to_start': 1, 'is_worker_thread': False, 'logger': <Logger __main__ (INFO)>}
+INFO(139681346697024)2022-03-26 01:54:09,607:error_dist is : [1, 0.06, 0.02, 0.02, 0.01, 0.005, 0.005, 0.005, 0.001, 0.001, 0.001, 0.0005]
+INFO(139681346697024)2022-03-26 01:54:09,607:deblur main program started
+INFO(139681346697024)2022-03-26 01:54:09,607:processing directory /tmp/qiime2-archive-240k1wr6/db3a7e23-3f79-4f9d-99f2-b64f607603ec/data
+INFO(139681346697024)2022-03-26 01:54:09,608:building negative db sortmerna index files
+INFO(139681346697024)2022-03-26 01:54:09,609:build_index_sortmerna files ['/home/ksong4/miniconda3/envs/qiime2-2022.2/lib/python3.8/site-packages/deblur/support_files/artifacts.fa'] to dir /tmp/tmp_arswnuj/deblur_working_dir
+INFO(139681346697024)2022-03-26 01:54:09,696:building positive db sortmerna index files
+INFO(139681346697024)2022-03-26 01:54:09,696:build_index_sortmerna files ['/home/ksong4/miniconda3/envs/qiime2-2022.2/lib/python3.8/site-packages/deblur/support_files/88_otus.fasta'] to dir /tmp/tmp_arswnuj/deblur_working_dir
+INFO(139681346697024)2022-03-26 01:54:54,296:processing per sample fasta files
+INFO(139681346697024)2022-03-26 01:54:54,296:--------------------------------------------------------
+INFO(139681346697024)2022-03-26 01:54:54,296:launch_workflow for file /tmp/qiime2-archive-240k1wr6/db3a7e23-3f79-4f9d-99f2-b64f607603ec/data/ERR1293056_0_L001_R1_001.fastq.gz
+INFO(139681346697024)2022-03-26 02:01:11,990:dereplicate seqs file /tmp/tmp_arswnuj/deblur_working_dir/ERR1293056_0_L001_R1_001.fastq.gz.trim
+INFO(139681346697024)2022-03-26 02:01:13,812:remove_artifacts_seqs file /tmp/tmp_arswnuj/deblur_working_dir/ERR1293056_0_L001_R1_001.fastq.gz.trim.derep
+INFO(139681346697024)2022-03-26 02:01:14,521:total sequences 3434, passing sequences 3434, failing sequences 0
+INFO(139681346697024)2022-03-26 02:01:14,521:multiple_sequence_alignment seqs file /tmp/tmp_arswnuj/deblur_working_dir/ERR1293056_0_L001_R1_001.fastq.gz.trim.derep.no_artifacts
+INFO(139836579936064)2022-03-26 02:16:37,647:*************************
+INFO(139836579936064)2022-03-26 02:16:37,647:deblurring started
+WARNING(139836579936064)2022-03-26 02:16:37,647:deblur version 1.1.0 workflow started on /tmp/qiime2-archive-jz5esx7t/db3a7e23-3f79-4f9d-99f2-b64f607603ec/data
+WARNING(139836579936064)2022-03-26 02:16:37,647:parameters: {'seqs_fp': '/tmp/qiime2-archive-jz5esx7t/db3a7e23-3f79-4f9d-99f2-b64f607603ec/data', 'output_dir': '/tmp/tmp01sex6dt', 'pos_ref_fp': (), 'pos_ref_db_fp': (), 'neg_ref_fp': (), 'neg_ref_db_fp': (), 'overwrite': True, 'mean_error': 0.005, 'error_dist': [1, 0.06, 0.02, 0.02, 0.01, 0.005, 0.005, 0.005, 0.001, 0.001, 0.001, 0.0005], 'indel_prob': 0.01, 'indel_max': 3, 'trim_length': -1, 'left_trim_length': 0, 'min_reads': 10, 'min_size': 2, 'threads_per_sample': 1, 'keep_tmp_files': True, 'log_level': 2, 'log_file': '/home1/ksong4/WZ/longMicrobiome/Scripts/snakemake/deblur.log', 'jobs_to_start': 1, 'is_worker_thread': False, 'logger': <Logger __main__ (INFO)>}
+INFO(139836579936064)2022-03-26 02:16:37,647:error_dist is : [1, 0.06, 0.02, 0.02, 0.01, 0.005, 0.005, 0.005, 0.001, 0.001, 0.001, 0.0005]
+INFO(139836579936064)2022-03-26 02:16:37,647:deblur main program started
+INFO(139836579936064)2022-03-26 02:16:37,648:processing directory /tmp/qiime2-archive-jz5esx7t/db3a7e23-3f79-4f9d-99f2-b64f607603ec/data
+INFO(139836579936064)2022-03-26 02:16:37,649:building negative db sortmerna index files
+INFO(139836579936064)2022-03-26 02:16:37,649:build_index_sortmerna files ['/home/ksong4/miniconda3/envs/qiime2-2022.2/lib/python3.8/site-packages/deblur/support_files/artifacts.fa'] to dir /tmp/tmp01sex6dt/deblur_working_dir
+INFO(139836579936064)2022-03-26 02:16:37,734:building positive db sortmerna index files
+INFO(139836579936064)2022-03-26 02:16:37,734:build_index_sortmerna files ['/home/ksong4/miniconda3/envs/qiime2-2022.2/lib/python3.8/site-packages/deblur/support_files/88_otus.fasta'] to dir /tmp/tmp01sex6dt/deblur_working_dir
+INFO(139836579936064)2022-03-26 02:17:22,808:processing per sample fasta files
+INFO(139836579936064)2022-03-26 02:17:22,808:--------------------------------------------------------
+INFO(139836579936064)2022-03-26 02:17:22,808:launch_workflow for file /tmp/qiime2-archive-jz5esx7t/db3a7e23-3f79-4f9d-99f2-b64f607603ec/data/ERR1293056_0_L001_R1_001.fastq.gz
+INFO(139836579936064)2022-03-26 02:23:43,049:dereplicate seqs file /tmp/tmp01sex6dt/deblur_working_dir/ERR1293056_0_L001_R1_001.fastq.gz.trim
+INFO(139836579936064)2022-03-26 02:23:44,795:remove_artifacts_seqs file /tmp/tmp01sex6dt/deblur_working_dir/ERR1293056_0_L001_R1_001.fastq.gz.trim.derep
+INFO(139836579936064)2022-03-26 02:23:45,477:total sequences 3434, passing sequences 3434, failing sequences 0
+INFO(139836579936064)2022-03-26 02:23:45,478:multiple_sequence_alignment seqs file /tmp/tmp01sex6dt/deblur_working_dir/ERR1293056_0_L001_R1_001.fastq.gz.trim.derep.no_artifacts
+INFO(139789454096192)2022-03-26 02:33:30,259:*************************
+INFO(139789454096192)2022-03-26 02:33:30,259:deblurring started
+WARNING(139789454096192)2022-03-26 02:33:30,260:deblur version 1.1.0 workflow started on /tmp/qiime2-archive-9vfmzffq/db3a7e23-3f79-4f9d-99f2-b64f607603ec/data
+WARNING(139789454096192)2022-03-26 02:33:30,260:parameters: {'seqs_fp': '/tmp/qiime2-archive-9vfmzffq/db3a7e23-3f79-4f9d-99f2-b64f607603ec/data', 'output_dir': '/tmp/tmp9z1vdqac', 'pos_ref_fp': (), 'pos_ref_db_fp': (), 'neg_ref_fp': (), 'neg_ref_db_fp': (), 'overwrite': True, 'mean_error': 0.005, 'error_dist': [1, 0.06, 0.02, 0.02, 0.01, 0.005, 0.005, 0.005, 0.001, 0.001, 0.001, 0.0005], 'indel_prob': 0.01, 'indel_max': 3, 'trim_length': 75, 'left_trim_length': 0, 'min_reads': 10, 'min_size': 2, 'threads_per_sample': 1, 'keep_tmp_files': True, 'log_level': 2, 'log_file': '/home1/ksong4/WZ/longMicrobiome/Scripts/snakemake/deblur.log', 'jobs_to_start': 1, 'is_worker_thread': False, 'logger': <Logger __main__ (INFO)>}
+INFO(139789454096192)2022-03-26 02:33:30,260:error_dist is : [1, 0.06, 0.02, 0.02, 0.01, 0.005, 0.005, 0.005, 0.001, 0.001, 0.001, 0.0005]
+INFO(139789454096192)2022-03-26 02:33:30,260:deblur main program started
+INFO(139789454096192)2022-03-26 02:33:30,260:processing directory /tmp/qiime2-archive-9vfmzffq/db3a7e23-3f79-4f9d-99f2-b64f607603ec/data
+INFO(139789454096192)2022-03-26 02:33:30,262:building negative db sortmerna index files
+INFO(139789454096192)2022-03-26 02:33:30,262:build_index_sortmerna files ['/home/ksong4/miniconda3/envs/qiime2-2022.2/lib/python3.8/site-packages/deblur/support_files/artifacts.fa'] to dir /tmp/tmp9z1vdqac/deblur_working_dir
+INFO(139789454096192)2022-03-26 02:33:30,340:building positive db sortmerna index files
+INFO(139789454096192)2022-03-26 02:33:30,340:build_index_sortmerna files ['/home/ksong4/miniconda3/envs/qiime2-2022.2/lib/python3.8/site-packages/deblur/support_files/88_otus.fasta'] to dir /tmp/tmp9z1vdqac/deblur_working_dir
+INFO(139789454096192)2022-03-26 02:34:18,043:processing per sample fasta files
+INFO(139789454096192)2022-03-26 02:34:18,043:--------------------------------------------------------
+INFO(139789454096192)2022-03-26 02:34:18,043:launch_workflow for file /tmp/qiime2-archive-9vfmzffq/db3a7e23-3f79-4f9d-99f2-b64f607603ec/data/ERR1293056_0_L001_R1_001.fastq.gz
+INFO(139789454096192)2022-03-26 02:40:40,472:dereplicate seqs file /tmp/tmp9z1vdqac/deblur_working_dir/ERR1293056_0_L001_R1_001.fastq.gz.trim
+INFO(139789454096192)2022-03-26 02:40:41,461:remove_artifacts_seqs file /tmp/tmp9z1vdqac/deblur_working_dir/ERR1293056_0_L001_R1_001.fastq.gz.trim.derep
+INFO(139789454096192)2022-03-26 02:40:42,203:total sequences 4293, passing sequences 4293, failing sequences 0
+INFO(139789454096192)2022-03-26 02:40:42,203:multiple_sequence_alignment seqs file /tmp/tmp9z1vdqac/deblur_working_dir/ERR1293056_0_L001_R1_001.fastq.gz.trim.derep.no_artifacts
+INFO(139789454096192)2022-03-26 02:40:58,628:deblurring 4293 sequences
+INFO(139789454096192)2022-03-26 02:42:03,126:4293 unique sequences left following deblurring
+INFO(139789454096192)2022-03-26 02:42:03,188:remove_chimeras_denovo_from_seqs seqs file /tmp/tmp9z1vdqac/deblur_working_dir/ERR1293056_0_L001_R1_001.fastq.gz.trim.derep.no_artifacts.msa.deblurto working dir /tmp/tmp9z1vdqac/deblur_working_dir
+INFO(139789454096192)2022-03-26 02:42:03,353:finished processing file
+INFO(139789454096192)2022-03-26 02:42:03,360:finished processing per sample fasta files
+INFO(139789454096192)2022-03-26 02:42:03,363:create_otu_table for 1 samples, into output table /tmp/tmp9z1vdqac/all.biom
+INFO(139789454096192)2022-03-26 02:42:03,740:for output biom table loaded 1 samples, 4293 unique sequences
+INFO(139789454096192)2022-03-26 02:42:03,744:keeping 0 (out of 4293 sequences) with >=10 reads
+WARNING(139789454096192)2022-03-26 02:42:03,747:removed 1 samples with reads per sample<1
+INFO(139789454096192)2022-03-26 02:42:03,761:saved to biom file /tmp/tmp9z1vdqac/all.biom
+INFO(139789454096192)2022-03-26 02:42:03,761:saved sequence fasta file to /tmp/tmp9z1vdqac/all.seqs.fa
+INFO(139789454096192)2022-03-26 02:42:03,761:getting 16s sequences from the biom table
+INFO(139789454096192)2022-03-26 02:42:03,761:remove_artifacts_seqs file /tmp/tmp9z1vdqac/all.seqs.fa
+WARNING(139789454096192)2022-03-26 02:42:03,761:file /tmp/tmp9z1vdqac/all.seqs.fa has size 0, continuing
+WARNING(139789454096192)2022-03-26 02:42:03,761:No clean sequences in /tmp/tmp9z1vdqac/all.seqs.fa
+INFO(139789454096192)2022-03-26 02:42:03,761:Keeping temp files
+INFO(139789454096192)2022-03-26 02:42:03,762:deblur workflow finished
+INFO(139789454096192)2022-03-26 02:42:03,762:output saved to /tmp/tmp9z1vdqac/all.biom
+INFO(139789454096192)2022-03-26 02:42:03,762:------------------
+INFO(140184132486976)2022-03-26 02:43:37,151:*************************
+INFO(140184132486976)2022-03-26 02:43:37,151:deblurring started
+WARNING(140184132486976)2022-03-26 02:43:37,152:deblur version 1.1.0 workflow started on /tmp/qiime2-archive-6ya3_p9v/db3a7e23-3f79-4f9d-99f2-b64f607603ec/data
+WARNING(140184132486976)2022-03-26 02:43:37,152:parameters: {'seqs_fp': '/tmp/qiime2-archive-6ya3_p9v/db3a7e23-3f79-4f9d-99f2-b64f607603ec/data', 'output_dir': '/tmp/tmpcpe5t5wn', 'pos_ref_fp': (), 'pos_ref_db_fp': (), 'neg_ref_fp': (), 'neg_ref_db_fp': (), 'overwrite': True, 'mean_error': 0.005, 'error_dist': [1, 0.06, 0.02, 0.02, 0.01, 0.005, 0.005, 0.005, 0.001, 0.001, 0.001, 0.0005], 'indel_prob': 0.01, 'indel_max': 3, 'trim_length': 72, 'left_trim_length': 0, 'min_reads': 10, 'min_size': 2, 'threads_per_sample': 1, 'keep_tmp_files': True, 'log_level': 2, 'log_file': '/home1/ksong4/WZ/longMicrobiome/Scripts/snakemake/deblur.log', 'jobs_to_start': 1, 'is_worker_thread': False, 'logger': <Logger __main__ (INFO)>}
+INFO(140184132486976)2022-03-26 02:43:37,152:error_dist is : [1, 0.06, 0.02, 0.02, 0.01, 0.005, 0.005, 0.005, 0.001, 0.001, 0.001, 0.0005]
+INFO(140184132486976)2022-03-26 02:43:37,152:deblur main program started
+INFO(140184132486976)2022-03-26 02:43:37,152:processing directory /tmp/qiime2-archive-6ya3_p9v/db3a7e23-3f79-4f9d-99f2-b64f607603ec/data
+INFO(140184132486976)2022-03-26 02:43:37,153:building negative db sortmerna index files
+INFO(140184132486976)2022-03-26 02:43:37,154:build_index_sortmerna files ['/home/ksong4/miniconda3/envs/qiime2-2022.2/lib/python3.8/site-packages/deblur/support_files/artifacts.fa'] to dir /tmp/tmpcpe5t5wn/deblur_working_dir
+INFO(140184132486976)2022-03-26 02:43:37,239:building positive db sortmerna index files
+INFO(140184132486976)2022-03-26 02:43:37,239:build_index_sortmerna files ['/home/ksong4/miniconda3/envs/qiime2-2022.2/lib/python3.8/site-packages/deblur/support_files/88_otus.fasta'] to dir /tmp/tmpcpe5t5wn/deblur_working_dir
+INFO(140184132486976)2022-03-26 02:44:22,534:processing per sample fasta files
+INFO(140184132486976)2022-03-26 02:44:22,535:--------------------------------------------------------
+INFO(140184132486976)2022-03-26 02:44:22,535:launch_workflow for file /tmp/qiime2-archive-6ya3_p9v/db3a7e23-3f79-4f9d-99f2-b64f607603ec/data/ERR1293056_0_L001_R1_001.fastq.gz

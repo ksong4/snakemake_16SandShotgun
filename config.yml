@@ -1,0 +1,20 @@
+all: 
+    project_dir: "/home1/ksong4/WZ/longMicrobiome/Scripts/snakemake"
+    multiplex: "multiplexed_fastq"
+    manifest: "/Manifest/SingleEndManifest.csv"
+    admin_email: "ksong4@ncsu.edu"
+
+# It is important to set this to the legnth you want not -1 as that could lead to error
+deblur:
+    trim_length: 72
+
+vsearch:
+    percent_ident: 0.97
+
+# The database is downloaded from https://docs.qiime2.org/2022.2/data-resources/
+classifier:
+    database: "/home1/ksong4/Reference/microbiome/QIIME2_2022_02/silva-138-99-515-806-nb-classifier.qza"
+
+
+
+
